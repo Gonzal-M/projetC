@@ -6,9 +6,9 @@
 #include "Movement.h"
 
 void Day(Player* Player,char* map){
-    for(int i=1;i<=30;i++) //30 = nombre de jours
+    for(int i=1;0<i;i++)        //continue jusqu'à l'arrêt manuel du jeu
     {
-        printf("Good morning %s, this is day #%d.\n",(*Player).name,i);
+        printf("Good morning %s, today is a new day! What will you do?\n",(*Player).name);
         int coord=SearchP(map);
         Movement(map,coord,&Player);
         int newcoord=SearchP(map);

@@ -1,2 +1,2 @@
-name: energy:1110754968 attack:1330597216 defense:1330597711 money:1330597711 xp:1330597711 level:1330597711
-coffee:1330597199 energydrink:1297043280 ynovCourses:6451042 autodebug:4199040 numpad:4208240 mouseXtraKeys:0 macroKeypad:1986429151coord:31
+name:tom energy:-1020488729 attack:1330597216 defense:1330597711 money:1330597711 xp:1330597711 level:1330597711
+coffee:1330597199 energydrink:1297043280 ynovCourses:6451042 autodebug:4199040 numpad:4209200 mouseXtraKeys:0 macroKeypad:1986429151coord:31

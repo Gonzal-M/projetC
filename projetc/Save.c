@@ -17,14 +17,13 @@ void QuitOrContinue(){
 
 void Save(Player* Player, int coord){
     FILE* save;
-    FILE* load;
     printf("Do you want to save in slot 1, 2 or 3?\n");
     printf("If you already have something saved in the selected save slot, it will be replaced.\n");
     int choice;
     scanf("%d",&choice);
     if(choice==1){
         save=fopen("save1.txt","w");
-        fprintf(save,"name:%c energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",(*Player).name,(*Player).energy,(*Player).attack,(*Player).defense,(*Player).money,(*Player).xp,(*Player).level);
+        fprintf(save,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",(*Player).name,(*Player).energy,(*Player).attack,(*Player).defense,(*Player).money,(*Player).xp,(*Player).level);
         fprintf(save,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",(*Player).Inventory.coffee,(*Player).Inventory.energyDrink,(*Player).Inventory.ynovCourses,(*Player).Inventory.autodebug,(*Player).Inventory.numpad,(*Player).Inventory.mouseXtraKeys,(*Player).Inventory.macroKeypad);
         fprintf(save,"coord:%d",coord);
         fclose(save);

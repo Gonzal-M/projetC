@@ -54,6 +54,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="ImpossibleMovement.h" />
+		<Unit filename="Load.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Load.h" />
 		<Unit filename="Map.c">
 			<Option compilerVar="CC" />
 		</Unit>

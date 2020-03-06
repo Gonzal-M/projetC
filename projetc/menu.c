@@ -5,6 +5,7 @@
 #include "Character.h"
 #include "Day.h"
 #include "PlayerSetup.h"
+#include "Load.h"
 
 void menu(){
     printf("\n\n                 G A M E   N A M E\n");
@@ -23,7 +24,8 @@ void menu(){
         PlayerSetup(&Player);
         Day(&Player,map);
     case 2:
-        break;
+        Load();
+        Day(&Player,map);
     case 3:
         about();
     case 4:

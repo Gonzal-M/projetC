@@ -12,7 +12,7 @@
 	"menu.h"
 	"Map.h"
 
-1583520848 source:c:\users\clawc\documents\b1-informatique\c\projetc\menu.c
+1583526947 source:c:\users\clawc\documents\b1-informatique\c\projetc\menu.c
 	<stdio.h>
 	<stdlib.h>
 	"about.h"
@@ -20,6 +20,7 @@
 	"Character.h"
 	"Day.h"
 	"PlayerSetup.h"
+	"Load.h"
 
 1582105619 c:\users\clawc\documents\b1-informatique\c\projetc\about.h
 
@@ -49,7 +50,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1583521459 source:c:\users\clawc\documents\b1-informatique\c\projetc\movement.c
+1583522459 source:c:\users\clawc\documents\b1-informatique\c\projetc\movement.c
 	<stdio.h>
 	<stdlib.h>
 	"Map.h"
@@ -78,7 +79,7 @@
 	<stdlib.h>
 	"Character.h"
 
-1583521158 source:c:\users\clawc\documents\b1-informatique\c\projetc\day.c
+1583527322 source:c:\users\clawc\documents\b1-informatique\c\projetc\day.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -142,7 +143,7 @@
 1583512957 c:\users\clawc\documents\b1-informatique\c\projetc\mapevent.h
 	"Character.h"
 
-1583518905 source:c:\users\clawc\documents\b1-informatique\c\projetc\save.c
+1583527730 source:c:\users\clawc\documents\b1-informatique\c\projetc\save.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -171,4 +172,11 @@
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
+
+1583528203 source:c:\users\clawc\documents\b1-informatique\c\projetc\load.c
+	<stdio.h>
+	<stdlib.h>
+	"Character.h"
+
+1583526916 c:\users\clawc\documents\b1-informatique\c\projetc\load.h
 
