@@ -5,10 +5,10 @@
 void Merchant(Player* Player)
 {
     printf("Welcome to my shop! Here's what I have to offer: \n");
-    printf("1. Coffee       : 10€       +20 Energy!\n");
-    printf("2. Energy Drink : 20€       +50 Energy!\n\n");
-    printf("3. Ynov Course  : 15€       +10 Attack!\n");
-    printf("4. Auto-Debug   : 15€       +10 Defense!\n\n");
+    printf("1. Coffee       : $10       +20 Energy!\n");
+    printf("2. Energy Drink : $20       +50 Energy!\n\n");
+    printf("3. Ynov Course  : $15       +10 Attack!\n");
+    printf("4. Auto-Debug   : $15       +10 Defense!\n\n");
     printf("0. Exit the shop. You won't be able to buy anything unless you come back to a merchant.\n");
 
     int choice;

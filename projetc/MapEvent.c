@@ -29,15 +29,6 @@ void MapEvent(int coord,char* map,Player* Player){
             Enemy spider;
             Fight(&Player,&spider,map,coord);
         }
-        //xp gain
-        if((*Player).xp==100||(*Player).xp==300||(*Player).xp==600||(*Player).xp==900){ //si le joueur va monter de niveau
-            (*Player).xp+=100;
-            (*Player).level+=1;
-            printf("You leveled up! You are now Level %d!\n",(*Player).level);
-        }else{
-            (*Player).xp+=100;
-            printf("You now have %d Experience Points!\n",(*Player).xp);
-        }
 
     } else if(coord==10||coord==15||coord==19){    //Case arme
 

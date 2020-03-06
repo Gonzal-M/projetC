@@ -19,6 +19,7 @@ void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
         UseItem(&Player,&Enemy);
     } else if (choice ==3){
         printf("You ran away from the bug!\n");
+        Day(&Player,map);
     } else {
         printf("Unknown choice. Please choose again.\n");
         FightMenu(&Player,&Enemy,map,coord);
