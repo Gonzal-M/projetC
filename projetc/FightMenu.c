@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Movement.h"
 #include "FightMenu.h"
 
 void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
@@ -20,7 +19,6 @@ void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
         UseItem(&Player,&Enemy);
     } else if (choice ==3){
         printf("You ran away from the bug!\n");
-        Movement(map,coord);
     } else {
         printf("Unknown choice. Please choose again.\n");
         FightMenu(&Player,&Enemy,map,coord);

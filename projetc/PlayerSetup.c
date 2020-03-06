@@ -19,7 +19,7 @@ void PlayerSetup(Player* Player){
 
 
     (*Player).Inventory.coffee=1;
-    (*Player).Inventory.energydrink=0;
+    (*Player).Inventory.energyDrink=0;
 
     (*Player).Inventory.ynovCourses=0;
     (*Player).Inventory.autodebug=0;

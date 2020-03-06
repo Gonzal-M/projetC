@@ -38,6 +38,7 @@
 		<Unit filename="Day.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="Day.h" />
 		<Unit filename="Enemies.h" />
 		<Unit filename="Enemy.c">
 			<Option compilerVar="CC" />
@@ -49,6 +50,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="FightMenu.h" />
+		<Unit filename="ImpossibleMovement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ImpossibleMovement.h" />
 		<Unit filename="Map.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -57,6 +62,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="MapEvent.h" />
+		<Unit filename="Merchant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Merchant.h" />
 		<Unit filename="Moth.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -67,6 +76,11 @@
 		<Unit filename="PlayerSetup.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="PlayerSetup.h" />
+		<Unit filename="Save.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Save.h" />
 		<Unit filename="SearchP.c">
 			<Option compilerVar="CC" />
 		</Unit>

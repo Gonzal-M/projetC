@@ -5,7 +5,7 @@
 void UseItem(Player* Player,Enemy* Enemy){
     printf("Here's your inventory! Select the number of the item you want to use or enter <0> to go back.\n\n");
     printf("1. Coffee           %d      +20 Energy!\n",(*Player).Inventory.coffee);
-    printf("2. Energy Drink     %d      +50 Energy!\n\n",(*Player).Inventory.energydrink);
+    printf("2. Energy Drink     %d      +50 Energy!\n\n",(*Player).Inventory.energyDrink);
     printf("3. Ynov Course      %d      +10 Attack!\n",(*Player).Inventory.ynovCourses);
     printf("4. Auto-Debug       %d      +10 Defense!\n\n",(*Player).Inventory.autodebug);
 
@@ -21,8 +21,8 @@ void UseItem(Player* Player,Enemy* Enemy){
         }
         printf("You drank Coffee and feel a little bit better.\n");
     }
-    else if(choice==2&& (*Player).Inventory.energydrink>0){
-        (*Player).Inventory.energydrink-=1;
+    else if(choice==2&& (*Player).Inventory.energyDrink>0){
+        (*Player).Inventory.energyDrink-=1;
         if((*Player).energy>=((*Player).maxenergy-50)){
             (*Player).energy=(*Player).maxenergy;
         }else{

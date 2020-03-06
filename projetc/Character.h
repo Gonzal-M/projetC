@@ -7,7 +7,7 @@ typedef struct Enemy Enemy;
 
 struct Inventory{
     int coffee;         //health +
-    int energydrink;    //health ++
+    int energyDrink;    //health ++
 
     int ynovCourses;    //attack boosts
     int autodebug;      //defense boost

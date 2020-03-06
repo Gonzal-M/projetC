@@ -3,12 +3,20 @@
 #include <time.h>
 #include "Enemies.h"
 #include "FightMenu.h"
+#include "Merchant.h"
 
 
 void MapEvent(int coord,char* map,Player* Player){
     srand(time(NULL));
     if(coord==0||coord==6||coord==28||coord==34){    //Case marchant
-
+        if ((*Player).money >= 0)
+        {
+            Merchant(&Player);
+        }
+        else
+        {
+            printf("MERCHANT : What are you going to buy if you don't have any money?? \n");
+        }
     }
 
     else if(coord==8||coord==12||coord==14||coord==16||coord==18||coord==20||coord==22||coord==24||coord==26||coord==30||coord==32){   //Case enemis
