@@ -12,7 +12,7 @@
 	"menu.h"
 	"Map.h"
 
-1583526947 source:c:\users\clawc\documents\b1-informatique\c\projetc\menu.c
+1583595075 source:c:\users\clawc\documents\b1-informatique\c\projetc\menu.c
 	<stdio.h>
 	<stdlib.h>
 	"about.h"
@@ -64,7 +64,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1583521312 source:c:\users\clawc\documents\b1-informatique\c\projetc\fightmenu.c
+1583595815 source:c:\users\clawc\documents\b1-informatique\c\projetc\fightmenu.c
 	<stdio.h>
 	<stdlib.h>
 	"FightMenu.h"
@@ -74,12 +74,12 @@
 	<stdlib.h>
 	"Character.h"
 
-1583519881 source:c:\users\clawc\documents\b1-informatique\c\projetc\playersetup.c
+1583595014 source:c:\users\clawc\documents\b1-informatique\c\projetc\playersetup.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
 
-1583527322 source:c:\users\clawc\documents\b1-informatique\c\projetc\day.c
+1583595502 source:c:\users\clawc\documents\b1-informatique\c\projetc\day.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -89,7 +89,7 @@
 
 1582999663 c:\users\clawc\documents\b1-informatique\c\projetc\searchp.h
 
-1583512977 source:c:\users\clawc\documents\b1-informatique\c\projetc\snail.c
+1583592859 source:c:\users\clawc\documents\b1-informatique\c\projetc\snail.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -99,7 +99,7 @@
 	<stdlib.h>
 	"Character.h"
 
-1583322217 source:c:\users\clawc\documents\b1-informatique\c\projetc\enemy.c
+1583593828 source:c:\users\clawc\documents\b1-informatique\c\projetc\enemy.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -111,7 +111,7 @@
 	<time.h>
 	"FightMenu.h"
 
-1583316988 source:c:\users\clawc\documents\b1-informatique\c\projetc\fight.c
+1583596054 source:c:\users\clawc\documents\b1-informatique\c\projetc\fight.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -121,7 +121,7 @@
 1583512952 c:\users\clawc\documents\b1-informatique\c\projetc\enemies.h
 	"Character.h"
 
-1583512898 c:\users\clawc\documents\b1-informatique\c\projetc\fightmenu.h
+1583595993 c:\users\clawc\documents\b1-informatique\c\projetc\fightmenu.h
 	"Character.h"
 
 1583521344 c:\users\clawc\documents\b1-informatique\c\projetc\movement.h
@@ -132,7 +132,7 @@
 	<stdlib.h>
 	"Character.h"
 
-1583519374 source:c:\users\clawc\documents\b1-informatique\c\projetc\mapevent.c
+1583595578 source:c:\users\clawc\documents\b1-informatique\c\projetc\mapevent.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -168,7 +168,7 @@
 1583520101 c:\users\clawc\documents\b1-informatique\c\projetc\save.h
 	"Character.h"
 
-1583522085 source:c:\users\clawc\documents\b1-informatique\c\projetc\merchant.c
+1583528837 source:c:\users\clawc\documents\b1-informatique\c\projetc\merchant.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"

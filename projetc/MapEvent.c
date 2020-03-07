@@ -11,7 +11,7 @@ void MapEvent(int coord,char* map,Player* Player){
     if(coord==0||coord==6||coord==28||coord==34){    //Case marchant
         if ((*Player).money >= 0)
         {
-            Merchant(&Player);
+            Merchant(Player);
         }
         else
         {
@@ -24,10 +24,14 @@ void MapEvent(int coord,char* map,Player* Player){
         //Fight
         if(r==0){           //Snail
             Enemy snail;
-            Fight(&Player,&snail,map,coord);
+            int level=EnemyLevel(Player);
+            Snail(Player,&snail,level);
+            Fight(Player,&snail,map,coord);
         } else if(r==1){    //Spider
             Enemy spider;
-            Fight(&Player,&spider,map,coord);
+            int level=EnemyLevel(Player);
+            Spider(Player,&spider,level);
+            Fight(Player,&spider,map,coord);
         }
 
     } else if(coord==10||coord==15||coord==19){    //Case arme
@@ -46,7 +50,7 @@ void MapEvent(int coord,char* map,Player* Player){
         }
     } else if (coord==3){       //Case boss
         Enemy moth;
-        Fight(&Player,&moth,map,coord);
+        Fight(Player,&moth,map,coord);
         printf("Congratulations, %s! You beat the boss!\n\n",(*Player).name);
         printf("You handed in your program to be graded.\n");
         if((*Player).level==5){

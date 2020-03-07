@@ -17,23 +17,21 @@ void XPandMoney(Player* Player){
 
     //money
     if((*Player).level==1||(*Player).level==2){
-        printf("Your earned $5.\n");
+        printf("You earned $5.\n");
         (*Player).money+=5;
     }else if((*Player).level==3||(*Player).level==4){
-        printf("Your earned $10.\n");
+        printf("You earned $10.\n");
         (*Player).money+=10;
     }else{
-        printf("Your earned $15!\n");
+        printf("You earned $15!\n");
         (*Player).money+=15;
     }
 
 }
 
 void Fight(Player* Player, Enemy* Enemy,char* map, int coord){
-    int level=EnemyLevel(&Player);
-    Snail(&Player,&Enemy,level);
     while((*Enemy).hp>0){
-        FightMenu(&Player,&Enemy,map,coord);
+        FightMenu(Player,Enemy,map,coord);
         if((*Player).energy<=0){
             printf("You couldn't get rid of this bug and are now exhausted.\n\n             G A M E   O V E R");
             main();

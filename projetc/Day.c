@@ -10,8 +10,8 @@ void Day(Player* Player,char* map){
     {
         printf("Good morning %s, today is a new day! What will you do?\n",(*Player).name);
         int coord=SearchP(map);
-        Movement(map,coord,&Player);
+        Movement(map,coord,Player);
         int newcoord=SearchP(map);
-        MapEvent(newcoord,map,&Player);
+        MapEvent(newcoord,map,Player);
     }
 }

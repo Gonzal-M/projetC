@@ -9,20 +9,20 @@ void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
     int choice;
     scanf("%d",&choice);
     if (choice==1){
-        int dmg=ChooseWeapon(&Player,&Enemy,map,coord);
+        int dmg=ChooseWeapon(Player,Enemy,map,coord);
         printf("You did %d damage!\n",dmg);
         if(!(dmg==0)){
             (*Enemy).hp-=dmg;
             printf("The enemy now has %d Health Points!\n",(*Enemy).hp);
         }
     } else if (choice ==2){
-        UseItem(&Player,&Enemy);
+        UseItem(Player,&Enemy);
     } else if (choice ==3){
         printf("You ran away from the bug!\n");
-        Day(&Player,map);
+        Day(Player,map);
     } else {
         printf("Unknown choice. Please choose again.\n");
-        FightMenu(&Player,&Enemy,map,coord);
+        FightMenu(Player,&Enemy,map,coord);
     }
 }
 
