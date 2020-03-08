@@ -65,7 +65,7 @@ void Movement(char* map, int coord,Player* Player)
         exit(0);
     }
     else if(choice=='a'||choice=='A'){
-        Save(&Player,coord);
+        Save(Player,coord);
         Movement(map,coord,&Player);
     }
     else{

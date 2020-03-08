@@ -12,6 +12,7 @@ void FullLines(char* map){
 //Utiliser cette fonction pour afficher la map
 void Map(char* map)
 {
+    color(8,0);
     printf(" _ _ _ _ _ _ _ _ _ _ _\n");
     EmptyLines();
 
@@ -25,4 +26,5 @@ void Map(char* map)
     EmptyLines();
     FullLines(map+28);
     printf("|_ _ _ _ _ _ _ _ _ _ _|\n");
+    color(15,0);
 }

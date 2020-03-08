@@ -3,7 +3,9 @@
 #include <time.h>
 #include "Enemies.h"
 #include "FightMenu.h"
-#include "Merchant.h"
+#include "MerchantAndRecupWeapon.h"
+#include "EnemyAttacks.h"
+#include "XPandMoney.h"
 
 
 void MapEvent(int coord,char* map,Player* Player){
@@ -26,16 +28,24 @@ void MapEvent(int coord,char* map,Player* Player){
             Enemy snail;
             int level=EnemyLevel(Player);
             Snail(Player,&snail,level);
-            Fight(Player,&snail,map,coord);
+            while(snail.hp>0){
+                Fight(Player,&snail,map,coord);
+                SnailAttack(Player,&snail);
+            }
+            XPandMoney(Player);
         } else if(r==1){    //Spider
             Enemy spider;
             int level=EnemyLevel(Player);
             Spider(Player,&spider,level);
-            Fight(Player,&spider,map,coord);
+            while(spider.hp>0){
+                Fight(Player,&spider,map,coord);
+                SpiderAttack(Player,&spider);
+            }
+            XPandMoney(Player);
         }
 
     } else if(coord==10||coord==15||coord==19){    //Case arme
-
+            RecupWeapon(Player,coord);
     } else if(coord==5||coord==7||coord==17||coord==27||coord==29){      //Case indice
         if(coord==5){
             printf("");
@@ -50,7 +60,11 @@ void MapEvent(int coord,char* map,Player* Player){
         }
     } else if (coord==3){       //Case boss
         Enemy moth;
-        Fight(Player,&moth,map,coord);
+        Moth(&moth);
+        while(moth.hp>0){
+                Fight(Player,&moth,map,coord);
+                MothAttack(Player,&moth);
+            }
         printf("Congratulations, %s! You beat the boss!\n\n",(*Player).name);
         printf("You handed in your program to be graded.\n");
         if((*Player).level==5){

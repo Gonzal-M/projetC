@@ -27,7 +27,7 @@ int about()
     printf(" 1. Return to the menu \n 2. Start the game.\n\n");
 
     int choice;
-    scanf("%d",&choice);
+    scanf(" %d",&choice);
     printf("\n");
 
     switch (choice)
@@ -37,7 +37,7 @@ int about()
     case 2:
         story();
     default:
-        printf("Unknown choice. Please choose again.");
+        printf("Unknown choice. Please choose again.\n");
         about();
     }
 }

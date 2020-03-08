@@ -1,1 +1,2 @@
-void Load();
+#include "Character.h"
+int Load(Player* Player);

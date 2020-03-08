@@ -3,6 +3,7 @@
 #include "Character.h"
 
 void Spider(Player* Player,Enemy* spider, int level){
+    color(5,0);
     (*spider).level=level;
     (*spider).hp=100+((level-1)*25);
     (*spider).attack=15+((level-1)*5);     //attaque haute
@@ -26,4 +27,5 @@ void Spider(Player* Player,Enemy* spider, int level){
     printf("                                  || \n");
     printf("                                   \\\\ \n");
     printf("                                    ' \n");
+    color(15,0);
 }

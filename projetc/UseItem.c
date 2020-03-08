@@ -10,7 +10,7 @@ void UseItem(Player* Player,Enemy* Enemy){
     printf("4. Auto-Debug       %d      +10 Defense!\n\n",(*Player).Inventory.autodebug);
 
     int choice;
-    scanf("%d",&choice);
+    scanf(" %d",&choice);
 
     if(choice==1 && (*Player).Inventory.coffee>0){
         (*Player).Inventory.coffee-=1;

@@ -36,7 +36,7 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
     int choice;
     int miss;
     int cc;
-    scanf("%d",&choice);
+    scanf(" %d",&choice);
 
     if(choice==1){
         miss = rand()%10;

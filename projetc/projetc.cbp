@@ -43,6 +43,7 @@
 		<Unit filename="Enemy.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="EnemyAttacks.h" />
 		<Unit filename="Fight.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -69,10 +70,14 @@
 		<Unit filename="Merchant.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="Merchant.h" />
+		<Unit filename="MerchantAndRecupWeapon.h" />
 		<Unit filename="Moth.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="MothAttack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MothAttack.h" />
 		<Unit filename="Movement.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -81,6 +86,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="PlayerSetup.h" />
+		<Unit filename="RecupWeapon.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="Save.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -92,12 +100,24 @@
 		<Unit filename="Snail.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="SnailAttack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SnailAttack.h" />
 		<Unit filename="Spider.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="SpiderAttack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SpiderAttack.h" />
 		<Unit filename="UseItem.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="XPandMoney.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="XPandMoney.h" />
 		<Unit filename="about.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -105,6 +125,7 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="main.h" />
 		<Unit filename="menu.c">
 			<Option compilerVar="CC" />
 		</Unit>

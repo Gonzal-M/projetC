@@ -7,7 +7,7 @@ void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
     printf("What do you want to do now, %s?\n",(*Player).name);
     printf(" 1. Attack\n 2. Use Item\n 3. Flee\n");
     int choice;
-    scanf("%d",&choice);
+    scanf(" %d",&choice);
     if (choice==1){
         int dmg=ChooseWeapon(Player,Enemy,map,coord);
         printf("You did %d damage!\n",dmg);

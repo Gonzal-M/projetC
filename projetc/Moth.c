@@ -3,6 +3,7 @@
 #include "Character.h"
 
 void Moth(Enemy* moth){            //boss
+    color(4,0);
     (*moth).level=5;
     (*moth).hp=500;
     (*moth).attack=45;
@@ -31,5 +32,6 @@ void Moth(Enemy* moth){            //boss
     printf("          \\; ; ;|   |; ; ; / \n");
     printf("           \\; ; /    \\ ; ;/ \n");
     printf("            \\_.'      '._/ \n");
+    color(15,0);
 }
 

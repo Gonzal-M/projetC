@@ -12,7 +12,7 @@ void Merchant(Player* Player)
     printf("0. Exit the shop. You won't be able to buy anything unless you come back to a merchant.\n");
 
     int choice;
-    scanf("%d",&choice);
+    scanf(" %d",&choice);
 
     if (choice == 1)
     {
@@ -91,7 +91,7 @@ void StayInShop(Player* Player)
 {
     printf("\n\n 1. Stay in the shop \n 2. Exit the shop\n\n");
     int exitChoice;
-    scanf("%d",&exitChoice);
+    scanf(" %d",&exitChoice);
     if (exitChoice == 1)
     {
         Merchant(&Player);
