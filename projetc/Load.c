@@ -12,18 +12,21 @@ int Load(Player* Player){
     if(choice==1 && !(load=fopen("save1.txt", "r") == NULL)){
         load=fopen("save1.txt","r");
         fscanf(load,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",&(*Player).name,&(*Player).energy,&(*Player).attack,&(*Player).defense,&(*Player).money,&(*Player).xp,&(*Player).level);
+        fscanf(load,"maxenergy:%d attackboost:%d defenseboost:%d",&(*Player).maxenergy,&(*Player).attackboost,&(*Player).defenseboost);
         fscanf(load,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",&(*Player).Inventory.coffee,&(*Player).Inventory.energyDrink,&(*Player).Inventory.ynovCourses,&(*Player).Inventory.autodebug,&(*Player).Inventory.numpad,&(*Player).Inventory.mouseXtraKeys,&(*Player).Inventory.macroKeypad);
         fscanf(load,"coord:%d",&coord);
         fclose(load);
     }else if(choice==2 && !(load=fopen("save2.txt", "r") == NULL)){
         load=fopen("save2.txt","r");
         fscanf(load,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",&(*Player).name,&(*Player).energy,&(*Player).attack,&(*Player).defense,&(*Player).money,&(*Player).xp,&(*Player).level);
+        fscanf(load,"maxenergy:%d attackboost:%d defenseboost:%d",&(*Player).maxenergy,&(*Player).attackboost,&(*Player).defenseboost);
         fscanf(load,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",&(*Player).Inventory.coffee,&(*Player).Inventory.energyDrink,&(*Player).Inventory.ynovCourses,&(*Player).Inventory.autodebug,&(*Player).Inventory.numpad,&(*Player).Inventory.mouseXtraKeys,&(*Player).Inventory.macroKeypad);
         fscanf(load,"coord:%d",&coord);
         fclose(load);
     }else if(choice==3 && !(load=fopen("save3.txt", "r") == NULL)){
         load=fopen("save3.txt","r");
         fscanf(load,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",&(*Player).name,&(*Player).energy,&(*Player).attack,&(*Player).defense,&(*Player).money,&(*Player).xp,&(*Player).level);
+        fscanf(load,"maxenergy:%d attackboost:%d defenseboost:%d",&(*Player).maxenergy,&(*Player).attackboost,&(*Player).defenseboost);
         fscanf(load,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",&(*Player).Inventory.coffee,&(*Player).Inventory.energyDrink,&(*Player).Inventory.ynovCourses,&(*Player).Inventory.autodebug,&(*Player).Inventory.numpad,&(*Player).Inventory.mouseXtraKeys,&(*Player).Inventory.macroKeypad);
         fscanf(load,"coord:%d",&coord);
         fclose(load);

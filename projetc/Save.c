@@ -24,6 +24,7 @@ void Save(Player* Player, int coord){
     if(choice==1){
         save=fopen("save1.txt","w");
         fprintf(save,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",(*Player).name,(*Player).energy,(*Player).attack,(*Player).defense,(*Player).money,(*Player).xp,(*Player).level);
+        fprintf(save,"maxenergy:%d attackboost:%d defenseboost:%d",(*Player).maxenergy,(*Player).attackboost,(*Player).defenseboost);
         fprintf(save,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",(*Player).Inventory.coffee,(*Player).Inventory.energyDrink,(*Player).Inventory.ynovCourses,(*Player).Inventory.autodebug,(*Player).Inventory.numpad,(*Player).Inventory.mouseXtraKeys,(*Player).Inventory.macroKeypad);
         fprintf(save,"coord:%d",coord);
         fclose(save);
@@ -31,6 +32,7 @@ void Save(Player* Player, int coord){
     else if(choice==2){
         save=fopen("save2.txt","w");
         fprintf(save,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",(*Player).name,(*Player).energy,(*Player).attack,(*Player).defense,(*Player).money,(*Player).xp,(*Player).level);
+        fprintf(save,"maxenergy:%d attackboost:%d defenseboost:%d",(*Player).maxenergy,(*Player).attackboost,(*Player).defenseboost);
         fprintf(save,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",(*Player).Inventory.coffee,(*Player).Inventory.energyDrink,(*Player).Inventory.ynovCourses,(*Player).Inventory.autodebug,(*Player).Inventory.numpad,(*Player).Inventory.mouseXtraKeys,(*Player).Inventory.macroKeypad);
         fprintf(save,"coord:%d",coord);
         fclose(save);
@@ -38,6 +40,7 @@ void Save(Player* Player, int coord){
     else if(choice==3){
         save=fopen("save3.txt","w");
         fprintf(save,"name:%s energy:%d attack:%d defense:%d money:%d xp:%d level:%d\n",(*Player).name,(*Player).energy,(*Player).attack,(*Player).defense,(*Player).money,(*Player).xp,(*Player).level);
+        fprintf(save,"maxenergy:%d attackboost:%d defenseboost:%d",(*Player).maxenergy,(*Player).attackboost,(*Player).defenseboost);
         fprintf(save,"coffee:%d energydrink:%d ynovCourses:%d autodebug:%d numpad:%d mouseXtraKeys:%d macroKeypad:%d",(*Player).Inventory.coffee,(*Player).Inventory.energyDrink,(*Player).Inventory.ynovCourses,(*Player).Inventory.autodebug,(*Player).Inventory.numpad,(*Player).Inventory.mouseXtraKeys,(*Player).Inventory.macroKeypad);
         fprintf(save,"coord:%d",coord);
         fclose(save);

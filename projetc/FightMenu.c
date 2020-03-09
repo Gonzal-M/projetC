@@ -4,8 +4,10 @@
 
 void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
 {
-    printf("What do you want to do now, %s?\n",(*Player).name);
-    printf(" 1. Attack\n 2. Use Item\n 3. Flee\n");
+    color(11,0);
+    printf("\nWhat do you want to do now, %s?\n",(*Player).name);
+    color(15,0);
+    printf(" 1. Attack\n 2. Use Item\n 3. Flee\n\n");
     int choice;
     scanf(" %d",&choice);
     if (choice==1){
@@ -18,10 +20,13 @@ void FightMenu(Player* Player,Enemy* Enemy,char* map, int coord)
     } else if (choice ==2){
         UseItem(Player,&Enemy);
     } else if (choice ==3){
+        color(12,0);
         printf("You ran away from the bug!\n");
         Day(Player,map);
     } else {
+        color(8,0);
         printf("Unknown choice. Please choose again.\n");
+        color(15,0);
         FightMenu(Player,&Enemy,map,coord);
     }
 }

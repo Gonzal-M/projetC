@@ -24,13 +24,17 @@ void MothAttack (Player* Player,Enemy* Enemy)
             {
                 int att = (*Enemy).attack * 2;
                 (*Player).energy -= ( att - defense );
+                color(4,0);
                 printf("The moth attacks you with a critical hit ! You take %d damage ! \n \n",( att - defense ));
+                color(15,0);
                 printf("You currently have %d energy left ! \n \n",(*Player).energy);
             }
             else
             {
                 (*Player).energy -= ( (*Enemy).attack - defense );
+                color(12,0);
                 printf("The moth attacks you ! You take %d damage ! \n \n",( (*Enemy).attack - defense ));
+                color(15,0);
                 printf("You currently have %d energy left ! \n \n",(*Player).energy);
             }
         }

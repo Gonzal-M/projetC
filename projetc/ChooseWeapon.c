@@ -5,33 +5,40 @@
 
 int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
     srand(time(NULL));
+    color(11,0);
     printf("What weapon do you want to use?\n");
+    color(15,0);
 
     printf("1. Ball Mouse    -   You feel like the ball might break any second. Does 7 damage.\n");
     printf("2. TenKeyLess    -   The lack of numpad leads to typos. Does 10 damage. Higher miss chances.\n\n");
 
     if((*Player).Inventory.numpad==1){
+        color(15,0);
         printf("3. Numpad        -   Plug it in your keyboard! Does 15 damage. Low miss chances!\n");
     }else{
+        color(8,0);
         printf("3. Numpad        -   You don't have this item. You might be able to find them somewhere!\n");
     }
 
     if((*Player).Inventory.mouseXtraKeys==1){
+        color(15,0);
         printf("4. Optic. Mouse  -   It has two extra buttons on the side! Does 17 damage.\n");
     }else{
+        color(8,0);
         printf("4. Optic. Mouse  -   You don't have this item. You might be able to find them somewhere!\n");
     }
 
     if((*Player).Inventory.macroKeypad==1){
+        color(15,0);
         printf("5. Macro Keypad  -   So much power! Does 20 damage. High chances for a critical hit.\n");
     }else{
+        color(8,0);
         printf("5. Macro Keypad  -   You don't have this item. You might be able to find them somewhere!\n\n");
     }
-
+    color(15,0);
     printf("0. Return to the previous menu.\n\n");
 
     //calcul des dégâts (coups critiques, coups ratés, coups normaux)
-
     int dmg=(*Player).attack+(*Player).attackboost;
     int choice;
     int miss;
@@ -44,10 +51,12 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=7;
             cc=rand()%20;
             if(cc==19){         //1 chance sur 20 pour CC
+                color(10,0);
                 printf("That was a critical hit!\n");
                 dmg+=7;
             }
         }else{
+            color(4,0);
             printf("Your hit missed!\n");
             dmg=0;
         }
@@ -59,10 +68,12 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=10;
             cc=rand()%40;
             if(cc==39){         //1 chance sur 40 pour CC
+                color(10,0);
                 printf("That was a critical hit!\n");
                 dmg+=10;
             }
         }else{
+            color(4,0);
             printf("Your hit missed!\n");
             dmg=0;
         }
@@ -74,10 +85,12 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=15;
             cc=rand()%20;
             if(cc==0){         //1 chance sur 20 pour CC
+                color(10,0);
                 printf("That was a critical hit!\n");
                 dmg+=15;
             }
         }else{
+            color(4,0);
             printf("Your hit missed!\n");
             dmg=0;
         }
@@ -89,10 +102,12 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=17;
             cc=rand()%10;
             if(cc<8){         //2 chance sur 10 pour CC
+                color(10,0);
                 printf("That was a critical hit!\n");
                 dmg+=17;
             }
         }else{
+            color(4,0);
             printf("Your hit missed!\n");
             dmg=0;
         }
@@ -105,8 +120,11 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             cc = rand()%4;
             if(cc<4){            //3 chances sur 4 pour CC
             dmg+=20;
+            color(10,0);
+            printf("That was a critical hit!\n");
             }
         }else{
+            color(4,0);
             printf("Your hit missed!\n");
             dmg=0;
         }
@@ -116,8 +134,11 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
         FightMenu(&Player,&Enemy,map,coord);
     }
     else{
+        color(8,0);
         printf("Unknown choice. Please choose again.\n");
         ChooseWeapon(&Player,&Enemy,map,coord);
     }
+    color(15,0);
+
     return dmg;
 }

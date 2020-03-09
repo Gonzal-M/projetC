@@ -8,9 +8,13 @@
 #include "Load.h"
 
 void menu(){
-    printf("\n\n                 G A M E   N A M E\n");
-    printf("                   ~ MAIN MENU ~ \n\n");
-    printf(" 1. Create New Game \n 2. Load Save Game \n 3. About \n 4. Exit\n\n");
+    color(11,0);
+    printf("\n\n                             H U N T I N G   P R O G R A M\n\n");
+    color(7,0);
+    printf("                                     ~ MAIN MENU ~ \n\n\n\n\n");
+    color(11,0);
+    printf("     1. Create New Game \n\n     2. Load Save Game \n\n     3. About \n\n     4. Exit\n\n\n");
+    color(15,0);
     int choice;
     scanf(" %d",&choice);
     printf("\n");
@@ -25,7 +29,6 @@ void menu(){
         Day(&Player,map);
     case 2:
         coord=Load(&Player);
-        printf("%d \n",coord);
         map[31]='O';
         map[coord]='P';
         Day(&Player,map);
@@ -34,7 +37,9 @@ void menu(){
     case 4:
         exit(0);
     default:
+        color(11,0);
         printf("Unknown choice. Please choose again.\n");
+        color(15,0);
         menu();
     }
 }

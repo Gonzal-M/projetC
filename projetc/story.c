@@ -7,7 +7,11 @@ void story(Player* Player)
     printf("What's your name?\n");
     scanf(" %s",&(*Player).name);
 
-    printf("\nWelcome, %s.\n",(*Player).name);
+    printf("\nWelcome, ");
+    color(11,0);
+    printf("%s",(*Player).name);
+    color(15,0);
+    printf(".\n");
     //story
 
     printf("               __\n");
@@ -18,7 +22,7 @@ void story(Player* Player)
     printf("|_|  _______      |_|\n");
     printf("    [=======]  ()\n\n");
 
-    printf("Press <Enter> if you are ready to begin, %s.\n",(*Player).name);
+    printf("Press <Enter> if you are ready to begin.\n");
 
     while(getchar()!='\n'); //attend que l'utilisateur appuie sur la touche entrée
     getchar();

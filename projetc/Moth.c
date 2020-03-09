@@ -21,8 +21,14 @@ void Moth(Enemy* moth){            //boss
     printf("    ,-'   /, \\~ \\-=-/ ~/ ,\\   '-,                 Your people and mine have a history, you know?!\n");
     printf("         ; ;  |~ '.' ~|  ; ; \n");
     printf("         |; '  \\=====/  ; ;| \n");
-    printf("        /| ; ;_| === |_; ; |\\              YOU:    Uh... Okay? I just need to finish this program, \n");
-    printf("       / |  \\_/;= = =;\\_/  | \\                     go find a lamp or someth-\n");
+    printf("        /| ; ;_| === |_; ; |\\");
+    color(11,0);
+    printf("              YOU:    Uh... Okay? I just need to finish this program, \n");
+    color(4,0);
+    printf("       / |  \\_/;= = =;\\_/  | \\                     ");
+    color(11,0);
+    printf("go find a lamp or someth-\n");
+    color(4,0);
     printf("     _/  | ; ;_ \\===/ _; ; |  \\_ \n");
     printf("    `    |  \\_/ ;\\=/; \\_/  |    ` \n");
     printf("         | \\_| ; ;|; ; |_/ | \n");
