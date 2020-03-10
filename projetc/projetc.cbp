@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="projetc" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/projetc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/projetc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Character.h" />
+		<Unit filename="ChooseWeapon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Day.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Day.h" />
+		<Unit filename="Enemies.h" />
+		<Unit filename="EnemyAttacks.h" />
+		<Unit filename="EnemyLevel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Fight.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FightMenu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FightMenu.h" />
+		<Unit filename="Hints.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ImpossibleMovement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ImpossibleMovement.h" />
+		<Unit filename="Load.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Load.h" />
+		<Unit filename="Map.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Map.h" />
+		<Unit filename="MapEvent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MapEvent.h" />
+		<Unit filename="Merchant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MerchantRecupWeaponHints.h" />
+		<Unit filename="Moth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="MothAttack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Movement.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Movement.h" />
+		<Unit filename="PlayerSetup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="PlayerSetup.h" />
+		<Unit filename="RecupWeapon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Save.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Save.h" />
+		<Unit filename="SearchP.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SearchP.h" />
+		<Unit filename="Snail.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SnailAttack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Spider.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="SpiderAttack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="UseItem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="XPandMoney.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="XPandMoney.h" />
+		<Unit filename="about.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="menu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="menu.h" />
+		<Unit filename="story.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,1 @@
+void PlayerSetup(Player* Player);

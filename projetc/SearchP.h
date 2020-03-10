@@ -1,0 +1,1 @@
+int SearchP(char* map);
