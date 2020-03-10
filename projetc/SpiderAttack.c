@@ -19,8 +19,8 @@ void SpiderAttack (Player* Player,Enemy* Enemy)
         }
         else
         {
-            int crit = rand()%20;
-            if (crit < 9) // 9 sur 20 que l'araignée fasse un coup critique
+            int crit = rand()%10;
+            if (crit < 4) // 4 sur 10 que l'araignée fasse un coup critique
             {
                 int att = (*Enemy).attack * 2;
                 (*Player).energy -= ( att - defense );

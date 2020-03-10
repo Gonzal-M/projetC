@@ -15,7 +15,9 @@ void MothAttack (Player* Player,Enemy* Enemy)
     {
         if (miss == 1) // 1 chance sur 10 que l'ennemi rate l'attaque
         {
+            color(10,0);
             printf("The enemy's attack failed! You take no damage! \n \n");
+            color(15,0);
         }
         else
         {
@@ -41,6 +43,8 @@ void MothAttack (Player* Player,Enemy* Enemy)
     }
     else
     {
+        color(10,0);
         printf("You have so much defense that the enemy can't hurt you! You take 0 damage! \n \n");
+        color(15,0);
     }
 }

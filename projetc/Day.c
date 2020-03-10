@@ -9,7 +9,7 @@ void Day(Player* Player,char* map){
     for(int i=1;0<i;i++)        //continue jusqu'à l'arrêt manuel du jeu
     {
         color(11,0);
-        printf("Good morning %s, today is a new day! What will you do?\n",(*Player).name);
+        printf("\n\nGood morning %s, today is a new day! What will you do?\n",(*Player).name);
         color(15,0);
         int coord=SearchP(map);
         Movement(map,coord,Player);

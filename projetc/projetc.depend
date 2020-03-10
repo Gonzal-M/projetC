@@ -1,23 +1,22 @@
 # depslib dependency file v1.0
-1583597687 source:c:\users\clawc\documents\b1-informatique\c\projetc\main.c
+1583780725 source:c:\users\clawc\documents\b1-informatique\c\projetc\main.c
 	<stdio.h>
 	<stdlib.h>
 	"menu.h"
 	"Character.h"
 	<windows.h>
 
-1583696440 source:c:\users\clawc\documents\b1-informatique\c\projetc\about.c
+1583856621 source:c:\users\clawc\documents\b1-informatique\c\projetc\about.c
 	<stdio.h>
 	<stdlib.h>
 	"story.h"
 	"menu.h"
 	"Map.h"
 
-1583777277 source:c:\users\clawc\documents\b1-informatique\c\projetc\menu.c
+1583859173 source:c:\users\clawc\documents\b1-informatique\c\projetc\menu.c
 	<stdio.h>
 	<stdlib.h>
-	"about.h"
-	"story.h"
+	"AboutStory.h"
 	"Character.h"
 	"Day.h"
 	"PlayerSetup.h"
@@ -29,7 +28,7 @@
 
 1582112483 c:\users\clawc\documents\b1-informatique\c\projetc\story.h
 
-1583775964 source:c:\users\clawc\documents\b1-informatique\c\projetc\story.c
+1583862363 source:c:\users\clawc\documents\b1-informatique\c\projetc\story.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -65,7 +64,7 @@
 	<stdio.h>
 	<stdlib.h>
 
-1583779178 source:c:\users\clawc\documents\b1-informatique\c\projetc\fightmenu.c
+1583858543 source:c:\users\clawc\documents\b1-informatique\c\projetc\fightmenu.c
 	<stdio.h>
 	<stdlib.h>
 	"FightMenu.h"
@@ -80,7 +79,7 @@
 	<stdlib.h>
 	"Character.h"
 
-1583777321 source:c:\users\clawc\documents\b1-informatique\c\projetc\day.c
+1583862017 source:c:\users\clawc\documents\b1-informatique\c\projetc\day.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -90,12 +89,12 @@
 
 1582999663 c:\users\clawc\documents\b1-informatique\c\projetc\searchp.h
 
-1583598168 source:c:\users\clawc\documents\b1-informatique\c\projetc\snail.c
+1583859675 source:c:\users\clawc\documents\b1-informatique\c\projetc\snail.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
 
-1583597644 source:c:\users\clawc\documents\b1-informatique\c\projetc\spider.c
+1583859620 source:c:\users\clawc\documents\b1-informatique\c\projetc\spider.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
@@ -106,13 +105,13 @@
 	<time.h>
 	"Character.h"
 
-1583779300 source:c:\users\clawc\documents\b1-informatique\c\projetc\chooseweapon.c
+1583856476 source:c:\users\clawc\documents\b1-informatique\c\projetc\chooseweapon.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"FightMenu.h"
 
-1583779066 source:c:\users\clawc\documents\b1-informatique\c\projetc\fight.c
+1583858529 source:c:\users\clawc\documents\b1-informatique\c\projetc\fight.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -129,18 +128,18 @@
 1583521344 c:\users\clawc\documents\b1-informatique\c\projetc\movement.h
 	"Character.h"
 
-1583772161 source:c:\users\clawc\documents\b1-informatique\c\projetc\useitem.c
+1583859093 source:c:\users\clawc\documents\b1-informatique\c\projetc\useitem.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
 
-1583778731 source:c:\users\clawc\documents\b1-informatique\c\projetc\mapevent.c
+1583856087 source:c:\users\clawc\documents\b1-informatique\c\projetc\mapevent.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"Enemies.h"
 	"FightMenu.h"
-	"MerchantAndRecupWeapon.h"
+	"MerchantRecupWeaponHints.h"
 	"EnemyAttacks.h"
 	"XPandMoney.h"
 
@@ -177,15 +176,15 @@
 	<stdlib.h>
 	"Character.h"
 
-1583779554 source:c:\users\clawc\documents\b1-informatique\c\projetc\load.c
+1583858817 source:c:\users\clawc\documents\b1-informatique\c\projetc\load.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
 
-1583599441 c:\users\clawc\documents\b1-informatique\c\projetc\load.h
+1583858677 c:\users\clawc\documents\b1-informatique\c\projetc\load.h
 	"Character.h"
 
-1583772074 source:c:\users\clawc\documents\b1-informatique\c\projetc\mothattack.c
+1583858953 source:c:\users\clawc\documents\b1-informatique\c\projetc\mothattack.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -199,7 +198,7 @@
 	"Enemies.h"
 	"FightMenu.h"
 
-1583772059 source:c:\users\clawc\documents\b1-informatique\c\projetc\spiderattack.c
+1583859660 source:c:\users\clawc\documents\b1-informatique\c\projetc\spiderattack.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -222,8 +221,23 @@
 1583693229 c:\users\clawc\documents\b1-informatique\c\projetc\xpandmoney.h
 	"Character.h"
 
-1583775888 source:c:\users\clawc\documents\b1-informatique\c\projetc\xpandmoney.c
+1583860250 source:c:\users\clawc\documents\b1-informatique\c\projetc\xpandmoney.c
 	<stdio.h>
 	<stdlib.h>
 	"Character.h"
+
+1583858507 source:c:\users\clawc\documents\b1-informatique\c\projetc\hints.c
+	<stdio.h>
+	<stdlib.h>
+
+1583856017 c:\users\clawc\documents\b1-informatique\c\projetc\merchantrecupweaponhints.h
+	"Character.h"
+
+1583593828 source:c:\users\clawc\documents\b1-informatique\c\projetc\enemylevel.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"Character.h"
+
+1583859147 c:\users\clawc\documents\b1-informatique\c\projetc\aboutstory.h
 

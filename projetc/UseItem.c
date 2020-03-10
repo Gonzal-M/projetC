@@ -12,6 +12,7 @@ void UseItem(Player* Player,Enemy* Enemy){
     int choice;
     scanf(" %d",&choice);
 
+    color(10,0);
     if(choice==1 && (*Player).Inventory.coffee>0){
         (*Player).Inventory.coffee-=1;
         if((*Player).energy>=((*Player).maxenergy-20)){
@@ -19,9 +20,7 @@ void UseItem(Player* Player,Enemy* Enemy){
         }else{
             (*Player).energy+=20;
         }
-        color(10,0);
         printf("You drank Coffee and feel a little bit better.\n");
-        color(15,0);
     }
     else if(choice==2&& (*Player).Inventory.energyDrink>0){
         (*Player).Inventory.energyDrink-=1;
@@ -30,28 +29,24 @@ void UseItem(Player* Player,Enemy* Enemy){
         }else{
             (*Player).energy+=50;
         }
-        color(10,0);
         printf("You drank an Energy Drink and feel full of Energy!\n");
-        color(15,0);
     }
 
     else if(choice==3 && (*Player).Inventory.ynovCourses>0){
         (*Player).attackboost+=10;
-        color(10,0);
         printf("You went to M. Janin's class and studied hard. You feel more prepared.\n");
-        color(15,0);
     }
     else if(choice==4&& (*Player).Inventory.autodebug>0){
         (*Player).defenseboost+=10;
-        color(10,0);
         printf("You felt lazy and decided to use your Auto-Debug subscription. Bugs better watch out!\n");
-        color(15,0);
     }
 
     else if(choice==0){
         FightMenu(&Player,&Enemy);
     }else{
+        color(8,0);
         printf("Unknown choice. Please choose again.\n");
         UseItem(&Player,&Enemy);
     }
+    color(15,0);
 }

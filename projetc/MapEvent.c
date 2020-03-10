@@ -3,7 +3,7 @@
 #include <time.h>
 #include "Enemies.h"
 #include "FightMenu.h"
-#include "MerchantAndRecupWeapon.h"
+#include "MerchantRecupWeaponHints.h"
 #include "EnemyAttacks.h"
 #include "XPandMoney.h"
 
@@ -51,17 +51,7 @@ void MapEvent(int coord,char* map,Player* Player){
     }
 
     else if(coord==5||coord==7||coord==17||coord==27||coord==29){      //Case indice
-        if(coord==5){
-            printf("");
-        }else if (coord==7){
-            printf("");
-        }else if(coord==17){
-            printf("");
-        }else if(coord==27){
-            printf("");
-        }else{
-            printf("");
-        }
+        Hints(coord);
     }
 
     else if (coord==3){       //Case boss

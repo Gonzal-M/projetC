@@ -40,10 +40,10 @@
 		</Unit>
 		<Unit filename="Day.h" />
 		<Unit filename="Enemies.h" />
-		<Unit filename="Enemy.c">
+		<Unit filename="EnemyAttacks.h" />
+		<Unit filename="EnemyLevel.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="EnemyAttacks.h" />
 		<Unit filename="Fight.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -51,6 +51,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="FightMenu.h" />
+		<Unit filename="Hints.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="ImpossibleMovement.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -70,14 +73,13 @@
 		<Unit filename="Merchant.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="MerchantAndRecupWeapon.h" />
+		<Unit filename="MerchantRecupWeaponHints.h" />
 		<Unit filename="Moth.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="MothAttack.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="MothAttack.h" />
 		<Unit filename="Movement.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -103,14 +105,12 @@
 		<Unit filename="SnailAttack.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="SnailAttack.h" />
 		<Unit filename="Spider.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="SpiderAttack.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="SpiderAttack.h" />
 		<Unit filename="UseItem.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -121,7 +121,6 @@
 		<Unit filename="about.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="about.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -133,7 +132,6 @@
 		<Unit filename="story.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="story.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

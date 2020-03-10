@@ -34,7 +34,9 @@ int Load(Player* Player){
         menu();
     }
     else{
+        color(8,0);
         printf("Either your choice was unknown or the save you selected was empty. Please choose again.\n");
+        color(15,0);
         Load(&Player);
     }
     return coord;

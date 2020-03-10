@@ -3,10 +3,24 @@
 #include <time.h>
 #include "FightMenu.h"
 
+int HitMissed(int dmg){
+    color(4,0);
+    printf("\nYour hit missed!\n");
+    color(15,0);
+    return 0;
+}
+int CriticalHit(int dmg){
+    color(10,0);
+    printf("\nThat was a critical hit!\n");
+    color(15,0);
+    dmg*=2;
+    return dmg;
+}
+
 int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
     srand(time(NULL));
     color(11,0);
-    printf("What weapon do you want to use?\n");
+    printf("\nWhat weapon do you want to use?\n");
     color(15,0);
 
     printf("1. Ball Mouse    -   You feel like the ball might break any second. Does 7 damage.\n");
@@ -51,14 +65,10 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=7;
             cc=rand()%20;
             if(cc==19){         //1 chance sur 20 pour CC
-                color(10,0);
-                printf("That was a critical hit!\n");
-                dmg+=7;
+                dmg=CriticalHit(dmg);
             }
         }else{
-            color(4,0);
-            printf("Your hit missed!\n");
-            dmg=0;
+            dmg=HitMissed(dmg);
         }
     }
 
@@ -68,14 +78,10 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=10;
             cc=rand()%40;
             if(cc==39){         //1 chance sur 40 pour CC
-                color(10,0);
-                printf("That was a critical hit!\n");
-                dmg+=10;
+                dmg=CriticalHit(dmg);
             }
         }else{
-            color(4,0);
-            printf("Your hit missed!\n");
-            dmg=0;
+            dmg=HitMissed(dmg);
         }
     }
 
@@ -85,14 +91,10 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=15;
             cc=rand()%20;
             if(cc==0){         //1 chance sur 20 pour CC
-                color(10,0);
-                printf("That was a critical hit!\n");
-                dmg+=15;
+                dmg=CriticalHit(dmg);
             }
         }else{
-            color(4,0);
-            printf("Your hit missed!\n");
-            dmg=0;
+            dmg=HitMissed(dmg);
         }
     }
 
@@ -102,14 +104,10 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=17;
             cc=rand()%10;
             if(cc<8){         //2 chance sur 10 pour CC
-                color(10,0);
-                printf("That was a critical hit!\n");
-                dmg+=17;
+                dmg=CriticalHit(dmg);
             }
         }else{
-            color(4,0);
-            printf("Your hit missed!\n");
-            dmg=0;
+            dmg=HitMissed(dmg);
         }
     }
 
@@ -119,14 +117,10 @@ int ChooseWeapon(Player* Player,Enemy* Enemy,char* map,int coord){
             dmg+=20;
             cc = rand()%4;
             if(cc<4){            //3 chances sur 4 pour CC
-            dmg+=20;
-            color(10,0);
-            printf("That was a critical hit!\n");
+                dmg=CriticalHit(dmg);
             }
         }else{
-            color(4,0);
-            printf("Your hit missed!\n");
-            dmg=0;
+            dmg=HitMissed(dmg);
         }
     }
 

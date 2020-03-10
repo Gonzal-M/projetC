@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "about.h"
-#include "story.h"
+#include "AboutStory.h"
 #include "Character.h"
 #include "Day.h"
 #include "PlayerSetup.h"
@@ -37,7 +36,7 @@ void menu(){
     case 4:
         exit(0);
     default:
-        color(11,0);
+        color(8,0);
         printf("Unknown choice. Please choose again.\n");
         color(15,0);
         menu();
